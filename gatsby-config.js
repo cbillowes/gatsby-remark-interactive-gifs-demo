@@ -27,6 +27,24 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-interactive-gifs`,
+            options: {
+              pwd: `${__dirname}`,
+              src: `${__dirname}/src/images/animated-gifs`,
+              dest: `${__dirname}/public/static/gifs`,
+              play: `${__dirname}/src/images/play.gif`,
+              placeholder: `${__dirname}/src/images/placeholder.gif`,
+              relativePath: `/static/gifs`
+            },
+          },
+        ]
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
