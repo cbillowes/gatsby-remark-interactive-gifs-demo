@@ -16,20 +16,21 @@ import "./gifs.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Fira+Mono&family=Roboto:wght@500&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Fira+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet" />
       <div className="overlay">
         <Header />
         <Ribbon />
+        <Badges />
       </div>
       <div className="page">
         <main>{children}</main>
       </div>
-      <Badges />
       <footer>
         &copy;
-          {new Date().getFullYear()}, Built with
+          {new Date().getFullYear()} Clarice Bouwer. Built with
           {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a> for Gatsby.
+        <Badges />
       </footer>
     </>
   )

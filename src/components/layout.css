@@ -5,6 +5,9 @@ body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  font-weight: 300;
 }
 
 h1,
@@ -15,10 +18,37 @@ h3 {
 
 code {
   font-family: 'Fira Mono', monospace;
+  white-space: pre-wrap;
+  color: rgb(51, 153, 119);
 }
 
 a {
   text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.html a {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rebeccapurple;
+  border-radius: 5px;
+  color: white;
+  padding: .2rem .5rem;
+  font-size: 1rem;
+}
+
+.html a:hover {
+  background-color: lightslategrey;
+}
+
+strong {
+  font-weight: bold;
+  background-color: #303030;
+  border-radius: 5px;
+  color: white;
+  padding: .2rem .5rem;
+  font-size: 1rem;
 }
 
 .overlay {
@@ -29,17 +59,28 @@ a {
   z-index: 1;
 }
 
+.overlay .badges {
+  margin-top: .25rem;
+  margin-left: 1.8rem;
+  display: inline-block;
+}
+
 .header .container h1 {
   display: inline-block;
   background-color: #202020;
   padding: .75rem 1.75rem;
+  margin-left: 2rem;
+  margin-bottom: 1.25rem;
+  line-height: 3.5rem;
 }
 
 .header .container code {
-  display: table-cell;
+  display: table;
   background-color: #303030;
-  padding: .75rem 1.75rem;
+  margin-left: 2rem;
+  padding: 0 1.75rem;
   color: white;
+  word-wrap: break-word;
 }
 
 .header h1 a {
@@ -47,34 +88,30 @@ a {
 }
 
 .html {
-  margin-top: -1rem;
+  margin-top: -1.5rem;
 }
 
-p,
-code {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
+.reading {
+  max-width: 720px;
+  padding: 0 1.25rem;
+  margin: 0 auto;
 }
 
-.badges {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2rem;
-  z-index: 1;
+.html.second {
+  padding-top: 1.5rem;
+  background-color: teal;
 }
 
 .badges img {
-  margin: .5rem;
+  margin: .25rem;
+}
+
+footer a {
+  color: rebeccapurple;
 }
 
 footer {
-  display: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background-color: #202020;
+  text-align: center;
 }
 
 @media screen and (max-width: 906px) {
@@ -98,4 +135,38 @@ footer {
     width: 100%;
     margin: 0;
   }
+}
+
+.second-wind {
+  margin: 2rem 0;
+  background-color: slategrey;
+  padding: 2rem;
+  text-align: center;
+}
+
+.graphql-preview {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.graphql-preview img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.graphql-preview .path {
+  z-index: 1;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: .5rem;
+  font-size: .75rem;
+  line-height: .75rem;
+  left: 0;
+  bottom: 0;
 }

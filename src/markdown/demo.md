@@ -1,12 +1,90 @@
-`gif:nyancat.gif:class=fullscreen`
-
-To embed a gif use the gif: protocol in your markdown file:
-
-```
 `gif:nyancat.gif`
+
+<div class="reading">
+
+# How to use
+
+Start by adding the **gif:** protocol to inline code in your markdown files.
+Specify the name and extension of the gif you want to embed.
+You have already done the heavy lifting by [configuring](https://github.com/cbillowes/gatsby-remark-interactive-gifs)
+the plugin to grab images from a source directory and copy them to the public destination directory.
+
+# Customize
+
+You can customize your embedded gif by providing an **id**, **class**, and a **caption**
+in no particular order.
+
+The embedded container will be assigned the element ID and/or class name when set.
+The caption will appear below the image.
+
+## Caption
+
+`gif:dolphin.gif:caption=So long and thanks for all the fish`
+
+```
+`gif:dolphin.gif:caption=So long and thanks for all the fish`
 ```
 
-`gif:marvin.gif`
-`gif:panic.gif`
+## Class
+
+`gif:marvin.gif:class=grayscale`
+
+```
+`gif:marvin.gif:class=grayscale`
+```
+
+Below is a snipped of the class I defined that will make the embedded images grayscale.
+```
+.grayscale {
+  filter: grayscale(1);
+}
+```
+
+# Error handling
+
+If you have a typo in your image name or the image is missing from the public directory, then a placeholder image will display.
+
+```
+`gif:look-away.gif`
+```
+
+`gif:look-away.gif`
+
+You need to supply a **placeholder** image. If you don't want this feature enabled you can override it with
+the styles.
+
+# Oh for the love of gifs!
+
+`gif:panic.gif:id=douglas-adams`
+
 `gif:thursday.gif`
-`gif:thanks.gif`
+
+---
+
+# GraphQL source nodes
+
+You can access your images using graphql queries.
+The schema looks like this:
+
+```
+useStaticQuery(
+  graphql`
+    query {
+      allInteractiveGif {
+        nodes {
+          relativePath
+          base64
+          absolutePath
+          sourcePath
+          stillRelativePath
+        }
+      }
+    }
+  `
+)
+```
+
+These images are loaded using **base64** from GraphQL and using the **relative paths** the image names are displayed for reference.
+
+
+</div>

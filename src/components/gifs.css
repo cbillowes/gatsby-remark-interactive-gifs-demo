@@ -46,3 +46,8 @@
   font-size: 90%;
   font-style: italic;
 }
+
+
+.grayscale {
+  filter: grayscale(1);
+}
