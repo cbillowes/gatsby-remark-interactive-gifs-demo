@@ -2,6 +2,10 @@
 
 <div class="reading">
 
+> **Gotchas:** A fresh copy needs to be downloaded to play a gif from the beginning.
+> There is no loading mechanism which could be trouble for larger gifs.
+> Any caching strategies are bypassed. This will be fixed in a future release.
+
 # How to use
 
 Start by adding the **gif:** protocol to inline code in your markdown files.

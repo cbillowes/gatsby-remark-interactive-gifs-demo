@@ -16,6 +16,16 @@ h3 {
   font-family: 'Arvo', serif;
 }
 
+blockquote {
+  border-left: solid 1rem #5790b6;
+  padding-left: 2rem;
+  margin-left: 0;
+}
+
+blockquote strong {
+  background-color: #5790b6;
+}
+
 code {
   font-family: 'Fira Mono', monospace;
   white-space: pre-wrap;

@@ -1,9 +1,9 @@
-# gatsby-remark-interactive-gifs demo
+# gatsby-remark-interactive-gifs demo site
 
-This site demos the [Gatsby plugin](https://github.com/cbillowes/gatsby-remark-interactive-gifs)
-used to add interactive animated gifs to markdown files.
+This site demos the Gatsby [gatsby-remark-interactive-gifs](https://github.com/cbillowes/gatsby-remark-interactive-gifs)
+plugin which is used to add interactive animated gifs to markdown files.
 
-## Gifs
+## References
 
 * Nyan cat: https://gfycat.com/backecstaticauklet-prguitarman-definition-widescreen
 * Dolphin: https://giphy.com/gifs/dolphin-Vt4wDrLAnH1tu
