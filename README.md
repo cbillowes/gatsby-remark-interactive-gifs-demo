@@ -5,6 +5,7 @@ used to add interactive animated gifs to markdown files.
 
 ## Gifs
 
+* Nyan cat: https://gfycat.com/backecstaticauklet-prguitarman-definition-widescreen
 * Dolphin: https://giphy.com/gifs/dolphin-Vt4wDrLAnH1tu
 * Homer bushes: https://gph.is/2AyYtsT
 * It must be Thursday: https://giphy.com/gifs/esIEbQqOP14PK
