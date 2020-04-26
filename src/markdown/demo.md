@@ -75,12 +75,16 @@ useStaticQuery(
   graphql`
     query {
       allInteractiveGif {
-        nodes {
-          relativePath
-          base64
-          absolutePath
-          sourcePath
-          stillRelativePath
+        edges {
+          node {
+            height
+            absolutePath
+            base64
+            relativePath
+            sourcePath
+            stillRelativePath
+            width
+          }
         }
       }
     }

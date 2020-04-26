@@ -1,61 +1,40 @@
-.interactive-gif {
+.interactive-gif {}
+
+/* Responsive flicker-less display */
+.interactive-gif .embedded {
   position: relative;
-}
-
-.interactive-gif .loading {
-  position: absolute;
-  height: 100%;
   width: 100%;
-  transition-delay: 1s;
-  transition-property: display;
+  height: auto;
 }
 
+.interactive-gif .loading,
+.interactive-gif .still-container,
+.interactive-gif .gif-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.interactive-gif .still,
+.interactive-gif .gif {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Loading indicator */
 .interactive-gif .loading .indicator {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  background-color: white;
-  border-radius: 50%;
-  border: solid 5px #ad1f4f;
-  width: 30%;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  filter: contrast(0.5);
 }
 
-.interactive-gif .placeholder {
-  cursor: default;
-  opacity: 0.5;
-  text-align: center;
-}
-
-.interactive-gif .placeholder img {
-  height: 150px;
-}
-
-.interactive-gif .gif-container,
-.interactive-gif .still-container {
-  position: relative;
-  cursor: pointer;
-  line-height: 0;
-  font-size: 0;
-}
-
-.interactive-gif .gif-container .gif {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.interactive-gif .still-container .still {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
+/* Play button */
 .interactive-gif .still-container .play {
+  cursor: pointer;
   filter: grayscale(100%);
   width: 20%;
   position: absolute;
@@ -65,25 +44,18 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
+/* Text underneath the gif */
 .interactive-gif .caption {
   font-size: 90%;
   font-style: italic;
 }
 
-@keyframes timeout {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+/* Image displayed when the gif cannot be found */
+.interactive-gif .placeholder {
+  filter: grayscale(1);
+  text-align: center;
 }
 
-.interactive-gif .loading .indicator {
-  animation: timeout 5s infinite;
+.interactive-gif .placeholder img {
+  width: 200px;
 }

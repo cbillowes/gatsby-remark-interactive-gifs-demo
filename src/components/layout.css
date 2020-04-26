@@ -202,7 +202,3 @@ footer .baby {
 .grayscale {
   filter: grayscale(30);
 }
-
-.interactive-gif .still-container {
-  filter: sepia(.5);
-}
