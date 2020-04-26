@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `gatsby-remark-interactive-gifs demo website`,
+    description: `A demo for adding interactive animated gifs to markdown files and querable in GraphQL.`,
+    author: `@cbillowes`,
     siteUrl: `https://gifs.curiousprogrammer.dev`,
+    url: `https://gifs.curiousprogrammer.dev`,
+    image: `gifs/nyancat.gif`,
+    twitterUsername: `@cbillowes`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,7 +38,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-remark-interactive-gifs demo website`,
-        short_name: `starter`,
+        short_name: `gatsby-remark-interactive-gifs`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
