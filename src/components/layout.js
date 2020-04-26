@@ -10,6 +10,9 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import Badges from "./badges"
 import Ribbon from "./ribbon"
+import GitHub from "./github"
+import Twitter from "./twitter"
+import Blog from "./blog"
 import "./layout.css"
 import "./gifs.css"
 
@@ -26,6 +29,17 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <footer>
+        <div className="contact">
+          <a className="icon" href="https://github.com/cbillowes">
+            <GitHub />
+          </a>
+          <a className="icon" href="https://twitter.com/cbillowes">
+            <Twitter />
+          </a>
+          <a className="icon blog" href="https://curiousprogrammer.dev">
+            <Blog />
+          </a>
+        </div>
         &copy;
           {new Date().getFullYear()} Clarice Bouwer. Built with
           {` `}

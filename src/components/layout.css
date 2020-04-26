@@ -180,3 +180,17 @@ footer {
   left: 0;
   bottom: 0;
 }
+
+.contact {
+  text-align: center;
+}
+
+.contact .icon {
+  display: inline-block;
+  width: 100px;
+  margin: 0 1rem;
+}
+
+.contact .icon.blog .gatsby-image-wrapper {
+  border-radius: 50%;
+}

@@ -13,3 +13,10 @@ plugin which is used to add interactive animated gifs to markdown files.
 * Don't panic: https://gph.is/XJPfmv
 * So long and thanks for all the fish: https://gph.is/1ilM9NU
 * Loading icon: https://loading.io/
+
+## Contact
+
+* GitHub: https://www.flaticon.com/free-icon/github_270798
+* Twitter: https://www.flaticon.com/free-icon/twitter_270826
+
+Icons made by [Roundicons](https://www.flaticon.com/authors/roundicons) from [www.flaticon.com](https://www.flaticon.com/)
