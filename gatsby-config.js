@@ -41,11 +41,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-interactive-gifs`,
             options: {
-              pwd: `${__dirname}`,
+              root: `${__dirname}`,
               src: `${__dirname}/src/images/animated-gifs`,
               dest: `${__dirname}/public/static/gifs`,
               play: `${__dirname}/src/images/play.gif`,
               placeholder: `${__dirname}/src/images/placeholder.gif`,
+              loading: `${__dirname}/src/images/loading.gif`,
               relativePath: `/static/gifs`
             },
           },

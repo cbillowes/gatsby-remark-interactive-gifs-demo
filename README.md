@@ -12,3 +12,4 @@ plugin which is used to add interactive animated gifs to markdown files.
 * Marvin the robot: https://gph.is/1ZxqVo7
 * Don't panic: https://gph.is/XJPfmv
 * So long and thanks for all the fish: https://gph.is/1ilM9NU
+* Loading icon: https://loading.io/
