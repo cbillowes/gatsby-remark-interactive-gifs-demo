@@ -124,6 +124,10 @@ footer {
   text-align: center;
 }
 
+footer .baby {
+  font-size: .75rem;
+}
+
 @media screen and (max-width: 906px) {
 
   .badges,
