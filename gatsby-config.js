@@ -4,9 +4,7 @@ module.exports = {
     description: `A demo for adding interactive animated gifs to markdown files and querable in GraphQL.`,
     author: `@cbillowes`,
     siteUrl: `https://gifs.curiousprogrammer.dev`,
-    url: `https://gifs.curiousprogrammer.dev`,
-    image: `gifs/nyancat.gif`,
-    twitterUsername: `@cbillowes`,
+    image: `static/gifs/still-nyancat.gif`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -43,7 +41,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/blog.png`, // This path is relative to the root of the site.
       },
     },
     {

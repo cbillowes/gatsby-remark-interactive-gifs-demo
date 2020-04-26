@@ -18,6 +18,8 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            siteUrl
+            image
             author
           }
         }
@@ -26,6 +28,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const image = `${site.siteMetadata.siteUrl}/${site.siteMetadata.image}`
 
   return (
     <Helmet
@@ -48,12 +51,20 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: image,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           name: `twitter:card`,
           content: `summary`,
+        },
+        {
+          property: `twitter:image`,
+          content: image,
         },
         {
           name: `twitter:creator`,
