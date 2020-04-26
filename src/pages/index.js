@@ -4,8 +4,9 @@ import path from "path"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Gifs = ({ gifs }) => {
-  return gifs.map(gif => {
+const Gifs = ({ edges }) => {
+  return edges.map(edge => {
+    const gif = edge.node
     const filename = path.basename(gif.relativePath)
     return (
       <span className="graphql-preview">
@@ -21,9 +22,11 @@ export default () => {
     graphql`
       query {
         allInteractiveGif {
-          nodes {
-            relativePath
-            base64
+          edges {
+            node {
+              relativePath
+              base64
+            }
           }
         }
         allMarkdownRemark {
@@ -38,7 +41,7 @@ export default () => {
   )
 
   const html = data.allMarkdownRemark.edges[0].node.html
-  const gifs = data.allInteractiveGif.nodes
+  const edges = data.allInteractiveGif.edges
 
   return (
     <Layout>
@@ -51,7 +54,7 @@ export default () => {
         dangerouslySetInnerHTML={{ __html: html }}>
       </div>
       <div className="second-wind">
-        <Gifs gifs={gifs} />
+        <Gifs edges={edges} />
         <div className="reading">
           <h1>It's all about the Gifs!</h1>
         </div>

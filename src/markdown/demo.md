@@ -77,9 +77,9 @@ useStaticQuery(
       allInteractiveGif {
         edges {
           node {
-            height
             absolutePath
             base64
+            height
             relativePath
             sourcePath
             stillRelativePath
