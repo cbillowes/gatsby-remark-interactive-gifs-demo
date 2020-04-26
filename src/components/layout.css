@@ -198,3 +198,11 @@ footer .baby {
 .contact .icon.blog .gatsby-image-wrapper {
   border-radius: 50%;
 }
+
+.grayscale {
+  filter: grayscale(30);
+}
+
+.interactive-gif .still-container {
+  filter: sepia(.5);
+}
