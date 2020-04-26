@@ -17,7 +17,8 @@
   transform: translateX(-50%) translateY(-50%);
   background-color: white;
   border-radius: 50%;
-  border: solid 20px #ad1f4f;
+  border: solid 5px #ad1f4f;
+  width: 30%;
 }
 
 .interactive-gif .placeholder {
