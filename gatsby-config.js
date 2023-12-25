@@ -10,7 +10,6 @@ module.exports = {
     author: `@cbillowes`,
   },
   plugins: [
-    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
