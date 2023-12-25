@@ -17,6 +17,13 @@ plugin which is used to add interactive animated gifs to markdown files.
 ## Contact
 
 * GitHub: https://www.flaticon.com/free-icon/github_270798
-* Twitter: https://www.flaticon.com/free-icon/twitter_270826
 
 Icons made by [Roundicons](https://www.flaticon.com/authors/roundicons) from [www.flaticon.com](https://www.flaticon.com/)
+
+## Testing locally
+
+Copy or clone the plugin to plugins/ directory and install it.
+
+```
+npm install --save file:plugins/gatsby-remark-interactive-gifs
+```
