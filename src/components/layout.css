@@ -2,7 +2,7 @@
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 1.25rem;
@@ -13,7 +13,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
 }
 
 blockquote {
@@ -27,7 +27,7 @@ blockquote strong {
 }
 
 code {
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   white-space: pre-wrap;
   color: rgb(51, 153, 119);
 }
@@ -44,7 +44,7 @@ a {
   background-color: rebeccapurple;
   border-radius: 5px;
   color: white;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   font-size: 1rem;
 }
 
@@ -57,7 +57,7 @@ strong {
   background-color: #303030;
   border-radius: 5px;
   color: white;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   font-size: 1rem;
 }
 
@@ -70,7 +70,7 @@ strong {
 }
 
 .overlay .badges {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   margin-left: 1.8rem;
   display: inline-block;
 }
@@ -78,7 +78,7 @@ strong {
 .header .container h1 {
   display: inline-block;
   background-color: #202020;
-  padding: .75rem 1.75rem;
+  padding: 0.75rem 1.75rem;
   margin-left: 2rem;
   margin-bottom: 1.25rem;
   line-height: 3.5rem;
@@ -113,7 +113,7 @@ strong {
 }
 
 .badges img {
-  margin: .25rem;
+  margin: 0.25rem;
 }
 
 footer a {
@@ -125,11 +125,10 @@ footer {
 }
 
 footer .baby {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 @media screen and (max-width: 906px) {
-
   .badges,
   .overlay,
   .footer,
@@ -178,9 +177,9 @@ footer .baby {
   position: absolute;
   background-color: black;
   color: white;
-  padding: .5rem;
-  font-size: .75rem;
-  line-height: .75rem;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
   left: 0;
   bottom: 0;
 }

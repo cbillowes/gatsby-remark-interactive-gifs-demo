@@ -1,20 +1,45 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
-    title: `gatsby-remark-interactive-gifs demo website`,
-    description: `A demo for adding interactive animated gifs to markdown files and querable in GraphQL.`,
-    author: `@cbillowes`,
+    title: `gatsby-remark-interactive-gifs Demo`,
+    description: `A demo for adding interactive animated gifs to markdown files and queryable in GraphQL.`,
     siteUrl: `https://gifs.curiousprogrammer.dev`,
     image: `static/gifs/still-nyancat.gif`,
+    author: `@cbillowes`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-styled-components",
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "UA-142100321-2",
-        head: false,
+        trackingId: "G-475QC81Y7F",
       },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-remark-interactive-gifs demo website`,
+        short_name: `gatsby-remark-interactive-gifs`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/blog.png`, // This path is relative to the root of the site.
+      },
+    },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -30,20 +55,6 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-remark-interactive-gifs demo website`,
-        short_name: `gatsby-remark-interactive-gifs`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/blog.png`, // This path is relative to the root of the site.
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -57,14 +68,11 @@ module.exports = {
               play: `${__dirname}/src/images/play.gif`,
               placeholder: `${__dirname}/src/images/placeholder.gif`,
               loading: `${__dirname}/src/images/loading.gif`,
-              relativePath: `/static/gifs`
+              relativePath: `/static/gifs`,
             },
           },
-        ]
+        ],
       },
-    }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    },
   ],
 }
