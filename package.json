@@ -26,7 +26,7 @@
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.13.0",
     "gatsby-plugin-sharp": "^5.13.0",
-    "gatsby-plugin-sitemap": "^6.13.0",
+    "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-remark-interactive-gifs": "^1.0.5",
     "gatsby-source-filesystem": "^5.13.0",
     "gatsby-transformer-sharp": "^5.13.0",
